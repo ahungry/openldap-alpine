@@ -2,6 +2,9 @@
 
 Small sample of running OpenLDAP instance in Alpine.
 
+Less than 1 GB RAM usage (see: `docker stats`)
+Less than 15 MB disk usage (see: `docker images | grep openldap`)
+
 ## Installation
 
 Clone this repo and adjust the basic setup files.
