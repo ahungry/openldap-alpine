@@ -28,3 +28,4 @@ uidNumber: 1234
 gidNumber: 1234
 uid: 1234
 homeDirectory: /home/mcarter
+userPassword: changeme
