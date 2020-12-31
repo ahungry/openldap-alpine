@@ -1,0 +1,30 @@
+dn: dc=my-domain,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: my-domain
+o: My Domain
+description: Example directory
+
+dn: cn=Manager,dc=my-domain,dc=com
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+
+dn: ou=Users,dc=my-domain,dc=com
+objectClass: organizationalRole
+cn: Users
+description: Basic users
+
+dn: cn=mcarter,ou=Users,dc=my-domain,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: mcarter
+sn: Carter
+description: Myself
+uidNumber: 1234
+gidNumber: 1234
+uid: 1234
+homeDirectory: /home/mcarter
