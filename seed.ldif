@@ -21,6 +21,7 @@ objectClass: person
 objectClass: top
 objectClass: inetOrgPerson
 objectClass: posixAccount
+objectClass: customObjectClass
 cn: mcarter
 sn: Carter
 description: Myself
@@ -29,3 +30,5 @@ gidNumber: 1234
 uid: 1234
 homeDirectory: /home/mcarter
 userPassword: changeme
+customAttribute: blub
+customAttribute: flub

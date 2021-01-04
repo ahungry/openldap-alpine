@@ -8,6 +8,7 @@ RUN apk update && apk add \
 RUN mkdir -p /run/openldap
 
 COPY ./slapd.conf /etc/openldap/
+COPY ./custom.schema /etc/openldap/schema/custom.schema
 COPY ./seed.ldif /root/
 COPY ./boot.sh /root/
 

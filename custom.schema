@@ -1,0 +1,27 @@
+# Copied from inetOrgPerson
+
+# Syntax etc. copied from Display Name in inetOrgPerson
+attributetype ( 1002.16.840.1.113730.3.1.241
+	NAME 'customAttribute'
+	DESC 'My custom attribute'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+        # Uncomment if it should be a unique value
+	# SINGLE-VALUE )
+        )
+
+objectclass	( 1002.16.840.1.113730.3.2.2
+    NAME 'customObjectClass'
+	DESC 'My Custom Object Class'
+    SUP inetOrgPerson
+    STRUCTURAL
+	MAY (
+		customAttribute $ audio $ businessCategory $ carLicense $ departmentNumber $
+		displayName $ employeeNumber $ employeeType $ givenName $
+		homePhone $ homePostalAddress $ initials $ jpegPhoto $
+		labeledURI $ mail $ manager $ mobile $ o $ pager $
+		photo $ roomNumber $ secretary $ uid $ userCertificate $
+		x500uniqueIdentifier $ preferredLanguage $
+		userSMIMECertificate $ userPKCS12 )
+	)
